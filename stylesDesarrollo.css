@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #666666;
+    color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position: relative; /* Required for dropdown positioning */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #99cc33;
+    border-radius: 10%;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #666666;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #99cc33;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Main content styles */
+main {
+    padding: 80px 20px 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #669933;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Estilos para la cabecera al hacer scroll */
+header.scrolled {
+    background-color: rgba(102, 102, 102, 0.8); /* Fondo semi-transparente */
+    opacity: 0.9; /* Baja opacidad */
+}
+
+/* Estilos para el pie de página al hacer scroll */
+footer.scrolled {
+    background-color: rgba(102, 153, 51, 0.8); /* Fondo semi-transparente */
+    opacity: 0.9; /* Baja opacidad */
+}
+
+/* New CSS for desarrollo-movil.html */
+
+.mobile-development-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.image-container {
+    width: 40%;
+    text-align: center;
+}
+
+.image-container img {
+    border-radius: 50%;
+    width: 80%;
+    height: auto;
+}
+
+.info-container {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.info-container h2 {
+    text-align: center;
+    color: #38a451;
+}
+
+.developer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.senior-developer, .junior-developer {
+    width: 45%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.senior-developer h3, .junior-developer h3 {
+    margin-top: 0;
+    color: #38a451;
+}
+
+.senior-developer ul, .junior-developer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.senior-developer ul li, .junior-developer ul li {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-media a img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .mobile-development-content {
+        flex-direction: column;
+    }
+
+    .image-container, .info-container {
+        width: 100%;
+    }
+
+    .developer-container {
+        flex-direction: column;
+    }
+
+    .senior-developer, .junior-developer {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}
+.skills img {
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+}
+
+/* Agrega estilos para la barra de experiencia */
+.experience-bar {
+    height: 10px;
+    background-color: #e03206; /* Color de fondo de la barra */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos específicos para el Senior y el Junior */
+.senior-experience {
+    width: 80%; /* Ancho de la barra para el Senior */
+}
+
+.junior-experience {
+    width: 20%; /* Ancho de la barra para el Junior */
+}
