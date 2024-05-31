@@ -1,83 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa Desarrolladora</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRACTICA WEB | Formulario</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
 </head>
 <body>
-    <header id="main-header">
-        <div class="header-content">
-            <h1>Equipo Desarrollador: Alexis & Jhicela</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Áreas de Desarrollo</a>
-                        <div class="dropdown-content">
-                            <a href="desarrollo-web.html">Desarrollo Web</a>
-                            <a href="desarrollo-movil.html">Desarrollo Móvil</a>
-                            <a href="desarrollo-software.html">Desarrollo Software</a>
-                        </div>
-                    </li>
-                    <li><a href="postulacion.html">Postulación</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div class="main-content">
-            <section class="carousel">
-                <div class="carousel-images">
-                    <img src="IMGS/imagen5.jpg" alt="Image 2">
-                    <img src="IMGS/imagen8.jpg" alt="Image 1">
-                    <img src="IMGS/imagen6.jpg" alt="Image 3">
-                </div>
-            </section>
-            <section class="right-content">
-                <h2>Bienvenidos a TecnoInnovadores </h2>
-                <div class="about">
-                    <h3>Misión</h3>
-                    <p>Proveer soluciones tecnológicas innovadoras que impulsen el crecimiento de nuestros clientes, transformando ideas en 
-                        realidades digitales y llevando sus proyectos al siguiente nivel. 
-                        Nos comprometemos a utilizar las últimas tecnologías y metodologías ágiles para desarrollar software robusto,
-                         escalable y adaptado a las necesidades específicas de cada cliente. Fomentamos una cultura de colaboración
-                         y excelencia, donde la creatividad y la ingeniería se combinan para resolver los desafíos más complejos del mundo digital.</p>
-                    <h3>Visión</h3>
-                    <p>Ser líderes en el desarrollo de software a nivel mundial, reconocidos por nuestra calidad, compromiso y capacidad para revolucionar
-                         la industria tecnológica. Aspiramos a crear un futuro donde la tecnología y la creatividad se fusionen para
-                          el progreso global, estableciendo estándares de innovación y sostenibilidad. Nuestra visión es ser el socio
-                         preferido para empresas de todas las industrias, ayudándolas a alcanzar sus metas a través de soluciones
-                        tecnológicas de vanguardia. Nos vemos como catalizadores del cambio, impulsando la transformación digital y 
-                        mejorando la vida de las personas a través de tecnologías avanzadas y experiencias de usuario excepcionales.</p>
-                </div>
-                <div class="contact">
-                    <h3>Contáctanos</h3>
-                    <p>Teléfono: 123-456-7890</p>
-                    <p>Dirección: Calle Falsa 123, Ciudad, País</p>
-                    <p>Redes Sociales:</p>
-                    <div class="social-media">
-                        <a href="https://www.facebook.com" target="_blank">
-                            <img src="IMGS/FACEBOOK.png" alt="Facebook">
-                        </a>
-                        <a href="https://www.twitter.com" target="_blank">
-                            <img src="IMGS/TWITTER.png" alt="Twitter">
-                        </a>
-                        <a href="https://www.linkedin.com" target="_blank">
-                            <img src="IMGS/LINKEDIN.png" alt="LinkedIn">
-                        </a>
+  <header id="main-header">
+    <div class="header-content">
+        <h1>Equipo Desarrollador: Alexis & Jhicela</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Áreas de Desarrollo</a>
+                    <div class="dropdown-content">
+                        <a href="desarrollo-web.html">Desarrollo Web</a>
+                        <a href="desarrollo-movil.html">Desarrollo Móvil</a>
+                        <a href="desarrollo-software.html">Desarrollo Software</a>
                     </div>
-                </div>
-            </section>
+                </li>
+                <li><a href="postulacion.html">Postulación</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  <!-- FORMULARIO -->
+  <section>
+    <div class="contenido">
+      <h1>FORMULARIO</h1>
+      <form class="form" id="skills-form">
+        <div class="form-group">
+          <label for="nombre">NOMBRE:</label>
+          <input class="form_input" type="text" name="nombre" id="nombre" placeholder="INGRESE SU NOMBRE">
         </div>
-    </main>
-
-    <footer id="main-footer">
-        <p>&copy; 2024 ALEXIS & JHICELA. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="scripts.js"></script>
+        <div class="form-group">
+          <label for="profesion">PROFESION:</label>
+          <input class="form_input" type="text" name="profesion" id="profesion" maxlength="20" placeholder="INGRESE SU PROFESION">
+        </div>
+        <div class="form-group">
+          <label for="telefono">TELEFONO:</label>
+          <input class="form_input" type="tel" name="telefono" id="telefono" maxlength="10" placeholder="INGRESE SU NUMERO">
+        </div>
+        <div class="form-group">
+          <label for="correo">CORREO ELECTRONICO:</label>
+          <input class="form_input" type="email" name="correo" id="correo" placeholder="INGRESE SU CORREO">
+        </div>
+        <div class="form-group">
+            <label for="linkedIn">LINKEDIN:</label>
+            <input class="form_input" type="text" name="linkedIn" id="linkedIn" placeholder="INGRESE SU LINKEDIN">
+        </div>
+        <div class="form-group">
+            <label>HABILIDADES (Seleccione hasta 3):</label>
+            <div class="skills">
+              <label><input type="checkbox" name="habilidades" value="1" class="skill-checkbox"> HTML</label>
+              <label><input type="checkbox" name="habilidades" value="2" class="skill-checkbox"> CSS</label>
+              <label><input type="checkbox" name="habilidades" value="3" class="skill-checkbox"> Git</label>
+              <label><input type="checkbox" name="habilidades" value="4" class="skill-checkbox"> JavaScript</label>
+              <label><input type="checkbox" name="habilidades" value="5" class="skill-checkbox"> AJAX</label>
+              <label><input type="checkbox" name="habilidades" value="6" class="skill-checkbox"> REACT</label>
+            </div>
+          </div>
+        <div class="form-group">
+          <button type="submit" class="form_submit" id="botonconfirmar">CONFIRMAR</button>
+          <p class="aja" id="aja"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <div id="contenedorTarjeta"></div>
+  <footer id="main-footer">
+    <p>&copy; 2024 ALEXIS & JHICELA. Todos los derechos reservados.</p>
+  </footer>
+  <script src="funtion.js"></script>
 </body>
 </html>
